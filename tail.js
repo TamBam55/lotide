@@ -10,6 +10,6 @@ const assertEqual = function(actual, expected) {
 
 // Tail function 
 
-const tail = funciton(array) {
+const tail = funciton(array) 
   return array.slice(1)
-}
+
