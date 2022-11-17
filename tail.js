@@ -10,6 +10,9 @@ const assertEqual = function(actual, expected) {
 
 // Tail function 
 
-const tail = funciton(array) 
+const tail = function(array) {
   return array.slice(1)
+}
 
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");

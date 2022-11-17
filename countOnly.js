@@ -30,7 +30,21 @@ if (itemsToCount[item]) {
 }
   return results;
 }
-/* not sure how this is supppose to run. There is going to be undefined variables, but it will show the names.? */
+/* not sure how this is supppose to run. There is going to be undefined variables, but it will show the names.? 
+
+function countOnly(name, letter) {
+    let count = 0;
+
+    // looping through the items
+    for (let i = 0; i < name.length; i++) {
+
+        // check how many characters
+        if (name.charAt(i) == letter) {
+            count += 1;
+        }
+    }
+    return count;
+}*/
 
 
 const firstNames = [

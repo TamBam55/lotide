@@ -9,20 +9,18 @@ const assertEqual = function(actual, expected) {
 };
 
 
-let countLetters = function(letterCount) {
-  let x = 1;
-  for (let i = 0; i < letterCount.length; i++) {
-    if (letterCount[i] === letterCount[i + 1]) {
-      x++;
-    } else {
-      console.log(${letterCount[i]}, ${x});
-      x = 1;
+const letterCount = {};
+const countLetters = function(string) {
+  for (let i = 0; i < string.length; i++) {
+    let ch = string[i];
+    (countLetters[ch]) = 0; {
+      countLetters[ch]++;
     }
+    console.log(countLetters);
   }
 };
-
 countLetters('Howdy');
-countLetters('Tammy');
+countLetters('lighthouse in the house');
 
 /*let letterCount = {};
 
@@ -32,3 +30,15 @@ text += x;
 } 
 
 I think that is how it is suppose to go, as current code is only counting letters that have a occured once, not how many times they occured*/
+
+/*let countLetters = (numLetters) => {
+  let x = 1;
+  for (let i = 0; i < numLetters.length; i++) {
+    if (numLetters[i] === numLetters[i + 1]) {
+      x++;
+    } else {
+      console.log(${numLetters[i]}, ${x});
+      x = 1;
+    }
+  }
+};*/
