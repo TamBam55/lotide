@@ -1,22 +1,6 @@
-const eqObjects = function(object1, object2) {
-  if (object1 === object2) { // how do I refeer to two values?
-    console.log("TRUE");
-  } else {
-    console.log("A BIG FAT FALSE");
-  }
-};
-
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function(object1, object2) {
+const assertObjectsEqual = function(actual, expected) {
   // Implement me!
-  const inspect = require('util').inspect; // <= add this line
-  if (eqObjects(object1, eobject2)) {
-    console.log(`✅✅✅ Assertion Passed: ${inspect(object1)} === ${inspect(object2)}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed:  ${inspect(object1)} !== ${inspect(object2)}`);
-  }
-  result inspect
+  const inspect = require('util').inspect;
+
 };
-
-
-console.log(`Example label: ${inspect(object1)}`);
