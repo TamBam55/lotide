@@ -21,5 +21,19 @@ const eqArrays = function(firstArray, secondArray) {
   return true;
 };
 
-without([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+
+const without = function (src, itemsToRemove) {
+  const results = [];
+
+  for (const item of src) {
+
+    if (!itemsToRemove.includes(item)) {
+      results.push(item)
+  }
+}
+return results
+}
+
+console.log(without([1, 2, 3], [1])) // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+

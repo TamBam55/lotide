@@ -16,16 +16,16 @@ const assertArraysEqual = function(array1, array2) {
 
 const middle = function(array) {
   const middleIndex = Math.floor(array.length / 2)
-  const modulo = array.length % 2 
+  const middleTwo = array.length % 2 
   if (array.length < 3)
     return []
 
-  if (modulo === 1)
+  if (middleTwo === 1)
   return [array [middleIndex]]
     
- if (modulo === 0)
- return [array [middleIndex -1], array [middleIndex] ]
-  }
+ if (middleTwo === 0)
+ return [array [middleIndex -1], array [middleIndex]]
+}
 //console.log(middle([1, 2, 3, 4, 5]))
 /*For arrays with one or two elements, there is no middle. Return an empty array.*/
 console.log(middle([1])) // => []

@@ -1,11 +1,12 @@
 
-const assertArraysEqual = function(array1, array2) {
-  if (array1 === array2) {
-    console.log('✅✅✅  Arrays are the same : [${array1}] === [${array2}]');
-  } else {
-    console.log('🔴🔴🔴  Arrays are not the same : [${array1}] !== [${array2}]');
-  }
-}
+
+
+// FUNCTION IMPLEMENTATION
+const assertObjectsEqual = function(actual, expected) {
+  // Implement me!
+  const inspect = require('util').inspect;
+
+};
 assertArraysEqual("Lighthouse Labs", "Bootcamp");
 assertArraysEqual(1, 1);
 assertArraysEqual(2, 4);
