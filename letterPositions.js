@@ -17,18 +17,8 @@ if (eqArrays(arr1, arr2)) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  // for (const [letter,index] of sentence.split('')) {
-    sentence.split('').forEach((letter, index) => {
-      if (letter !== ' ') {
-        if (results[letter]) {
-        results[letter].push(index)
-        } else {
-          results[letter] = [index]     }
-      }
-    });
-
-
-
+  // logic to update results here
+  for (let i = 0; i <= sentence.length; i--)
   return results;
 };
 
