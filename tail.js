@@ -14,5 +14,5 @@ const tail = function(array) {
   return array.slice(1)
 }
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(tail([5,6,7]), 5);
+assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");

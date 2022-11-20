@@ -14,7 +14,7 @@ const countLetters = function(string) {
   for (const letter of string) {
     if (letter === ' ') continue //<-- continue skips the index 
     if (results[letter]) { // looking for a letter
-      results[letter] ++ 
+      results[letter] ++ // adding to the count if there is more than one 
     }
     else {
       results[letter] = 1 
