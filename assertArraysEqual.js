@@ -1,11 +1,4 @@
-const eqArrays = function(firstArray, secondArray) {
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secondArray[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arr1, arr2) {
 if (eqArrays(arr1, arr2)) {
@@ -17,8 +10,5 @@ if (eqArrays(arr1, arr2)) {
 
 
 
-assertArraysEqual("Lighthouse Labs", "Bootcamp");
-assertArraysEqual(1, 1);
-assertArraysEqual(2, 4);
-assertArraysEqual("Lighthouse Labs", "Lighthouse Labs");
-assertArraysEqual(1, 2);
+
+module.exports = assertArraysEqual
